@@ -24,7 +24,8 @@ export default function ShippingForm({ handleNext }) {
 
 
     return (
-        <ValidatorForm onSubmit={handleSubmit} instantValidate={false}>
+        <ValidatorForm onSubmit={handleSubmit} instantValidate={false}
+            style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
             <Grid container spacing={2}>
                 <Grid item xs={12}>
                     <Typography variant="h6" gutterBottom>
@@ -86,6 +87,7 @@ export default function ShippingForm({ handleNext }) {
                     />
                 </Grid> */}
             </Grid>
+            <div style={{ flexGrow: 1 }} />
             <div className={classes.btnContainer}>
                 <Button
                     type='submit'
@@ -94,8 +96,9 @@ export default function ShippingForm({ handleNext }) {
                     className={classes.btn}
                 >
                     Next
-            </Button>
+                </Button>
             </div>
         </ValidatorForm >
+
     );
 }

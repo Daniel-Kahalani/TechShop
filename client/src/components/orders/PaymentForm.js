@@ -14,10 +14,10 @@ export default function PaymentForm({ handleNext, handlePrev }) {
     const [paymentMethod, setPaymentMethod] = useState('paypal')
 
     return (
-        <>
+        <div style={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
             <Typography variant="h6" gutterBottom>
                 Payment methode
-                </Typography>
+            </Typography>
             <RadioGroup
                 aria-label="payment-method"
                 name="paymentMethod"
@@ -27,6 +27,7 @@ export default function PaymentForm({ handleNext, handlePrev }) {
                     <Radio inputProps={{ 'aria-label': 'PayPal or Credit card' }} />}
                 />
             </RadioGroup>
+            <div style={{ flexGrow: 1 }} />
             <div className={classes.btnContainer}>
                 <Button onClick={handlePrev} className={classes.btn}>
                     Back
@@ -41,6 +42,6 @@ export default function PaymentForm({ handleNext, handlePrev }) {
                     Next
             </Button>
             </div>
-        </>
+        </div>
     );
 }
