@@ -17,6 +17,8 @@ export default makeStyles((theme) => ({
     minHeight: 50,
   },
   title: {
+    letterSpacing: '2px',
+    fontWeight: 500,
     display: 'none',
     textDecoration: 'none',
     [theme.breakpoints.up('xs')]: {
