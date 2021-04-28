@@ -46,7 +46,7 @@ export default function CartScreen() {
                         <Message severity='info'>
                             Your cart is empty, add some items
                         </Message> :
-                        <Grid container item xs={12} className={classes.mainGrid} spacing={1}>
+                        <Grid container xs={12} spacing={1}>
                             <Grid item xs={12} md={9}>
                                 {items.map(item => <CartItem key={item._id} item={item} editable />)}
                             </Grid>
