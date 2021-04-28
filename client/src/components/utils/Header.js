@@ -42,7 +42,7 @@ export default function Header() {
     <div className={classes.grow}>
       <AppBar className={classes.appBar} position="static" >
         <Toolbar className={classes.toolbar}>
-          <Typography className={classes.title} variant="h6"
+          <Typography className={classes.title} variant="h5"
             color='inherit'
             noWrap
             component={RouterLink} to='/' >
