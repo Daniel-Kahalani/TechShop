@@ -1,0 +1,34 @@
+{
+  "name": "techshop",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/server",
+    "server": "nodemon server/server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "node server/seeds/index",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.25.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "express-async-handler": "^1.1.4",
+    "express-mongo-sanitize": "^2.0.2",
+    "helmet": "^4.4.1",
+    "mongoose": "^5.12.3",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.1",
+    "nodemon": "^2.0.7"
+  }
+}
