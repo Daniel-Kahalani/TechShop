@@ -5,7 +5,7 @@ TechShop is e-commerce website for people buy electronic products,
 for live demo [click here](https://techshop-2021.herokuapp.com/)
 
 sample user:
-username - john@example.com
+email - john@example.com
 password - john147
 
 ![Home Page](Screenshots/home.png)
